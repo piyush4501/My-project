@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  color: rgb(0, 0, 0);
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-color: #f24c3d;
+  position: sticky;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.project {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  cursor: pointer;
+}
+nav ul li {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+}
+
+li:hover {
+  border-bottom: 3px solid rgb(154, 249, 0);
+}
+
+.main {
+  background-color: #f29727;
+  padding: 4rem;
+  max-height: 100vh;
+  border-bottom: 1px solid green;
+}
+.mainimg img{
+  border-radius: 90px;
+  
+}
+
+.continer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero_content {
+  font-size: 25px;
+  color: white;
+}
+.hero_content .hi_text {
+  font-size: 80px;
+  font-weight: 500;
+  color: rgb(255, 247, 0);
+}
+
+.hero_content .name_text {
+  font-size: 60px;
+}
+
+.hero_content h2 {
+  font-size: 50px;
+}
+
+.main h2 {
+  font-size: 5rem;
+  font-weight: bold;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.11em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+#project {
+  background-color: #8eac50;
+}
+
+#project h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.grid_item {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+  margin: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+}
+.card:hover .card_content {
+  background: rgb(255, 254, 254);
+  color: black;
+  transform: translateY(0px);
+}
+
+.card_content {
+  padding: 2rem;
+  position: relative;
+  top: -6.5rem;
+  margin-bottom: -6.5rem;
+  transition: 0.5s ease-in-out;
+  transform: translateY(100px);
+}
+
+.card_content h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.card .special {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#buttom {
+  background-color: #d3d04f;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 3rem;
+}
+
+.buttom_content {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem;
+}
+
+.contact_way {
+  padding: 2rem;
+}
+
+footer {
+  background-color: goldenrod;
+}
+footer h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 300;
+}

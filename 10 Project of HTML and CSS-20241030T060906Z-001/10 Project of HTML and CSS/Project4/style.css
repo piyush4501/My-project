@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    line-height: 1.2;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-section {
+    background-image: url(main.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-container {
+    color: white;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-left: 0px;
+}
+
+.lg-text1 {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+
+}
+
+.lg-text {
+    font-size: 50px;
+    font-weight: 400;
+
+}
+
+.blackbox {
+    background-color: #020107;
+    padding: 70px;
+}
+
+.blackbox h1 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.blackboxtext {
+    font-size: 115px;
+    font-weight: 500;
+}
+
+.work {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    max-width: 1300px;
+    margin: 50px auto;
+}
+
+.grid_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: rgb(171, 167, 167);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.image_container,
+img {
+    padding: 10px 17px;
+    border-radius: 50px;
+}
+
+.card_container {
+    padding: 10px;
+    text-align: center;
+    text-decoration: double;
+}
+
+.card_container,
+h2 {
+    margin-bottom: 5px;
+}
+
+.buttom_section {
+    display: flex;
+
+}
+
+.aboutme {
+    padding: 50px;
+    text-align: center;
+    /* max-width: 1000px; */
+    height: 300px;
+    background-color: rgb(36, 43, 26);
+}
+
+.contactme {
+    padding: 50px;
+    text-align: center;
+    /* max-width: 1000px; */
+    height: 300px;
+    background-color: rgb(62, 13, 13);
+}
+
+.aboutme h2,
+.contactme h2 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+footer {
+    padding: 35px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 786px) {
+    .hero_section {
+        min-height: 50vh;
+    }
+
+    .text_container {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .lg_text1 {
+        font-size: 32px;
+    }
+
+    .black_box h2 {
+        font-size: 24px;
+    }
+
+    .black_box h2 span {
+        font-weight: 400;
+        font-size: 32px;
+    }
+
+    .buttom_section {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .about h2,
+    .contact h2 {
+        font-size: 32px;
+    }
+}

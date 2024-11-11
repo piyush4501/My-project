@@ -1,0 +1,218 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+
+}
+
+/* .navbar::before {
+    content: "";
+    background-color: rgb(221, 221, 221);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.0;
+} */
+
+img {
+    margin: 10px;
+    height: 75px;
+    width: 85px;
+    border-radius: 10PX;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+
+}
+
+.navbar ul li {
+    text-decoration: none;
+    list-style: none;
+
+    margin: 38px 17px;
+
+}
+
+.navbar ul li a {
+    padding: 5px 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-family: 'Source Serif Pro', serif;
+
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(33, 7, 7);
+    border-radius: 15px;
+    color: red;
+}
+
+#front {
+    display: flex;
+    height: 362px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 9px;
+}
+
+#front::before {
+    content: "";
+    position: absolute;
+    background-image: url('elephant.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: center/cover;
+    height: 500PX;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#front h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 3rem;
+    font-family: 'Source Serif Pro', serif;
+}
+
+#front h1::first-letter {
+    color: red;
+    font-size: 5rem;
+}
+
+#front p {
+    font-size: 1.2rem;
+    font-family: 'Source Serif Pro', serif;
+}
+
+#headofchange {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#headofchange {
+    font-size: 3rem;
+    margin: 50px;
+    color: rgb(0, 0, 0);
+}
+
+#changes {
+    display: flex;
+    margin: 60px;
+}
+
+.box {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border: 2px solid black;
+    margin: 10px;
+    height: 400 px;
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.box .h2-num {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.box .h2-num::first-letter {
+    color: red;
+    font-size: 50px;
+}
+
+.box .center {
+    text-align: center;
+}
+
+#changes .box img {
+    height: 160px;
+    width: 280px;
+    margin: auto;
+    display: block;
+}
+
+.headofchanges {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+
+}
+
+.contact {
+    position: relative;
+}
+
+.contactus {
+    padding: 35px;
+    margin: 20px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(108, 108, 108, 1) 100%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px rgb(174, 172, 172);
+}
+
+.formgroup label {
+    font-size: 1.3rem;
+
+}
+.formgroup input{
+    width: 100%;
+    margin: 3px;
+    border-radius: 5px;
+
+}
+::placeholder{
+text-align: center;
+}
+
+.btn{
+    padding: 1px 10px;
+    margin: 5px;
+    font-size: 1.1rem;
+    border-radius: 7px;
+    box-shadow: 5px 0px 5px 3px rgb(179, 177, 177);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid red;
+    color: red;
+    border-radius: 5px;
+    
+}
+footer{
+    background: rgb(226, 223, 223);
+    color: rgb(0, 0, 0);
+    padding: 0px 20px;
+    text-align: center;
+
+}
